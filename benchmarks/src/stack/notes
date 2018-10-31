@@ -1,0 +1,4 @@
+Stack with array and list implementations are taken from Mark Weiss's data structure book.
+It is very simple. 
+I have checked push and pushPop methods for the array implementation and
+push and pop methods for the list implementation.
