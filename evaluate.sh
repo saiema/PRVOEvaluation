@@ -10,6 +10,7 @@ propertiesTemplateFile="$1"
 budget="$2"
 seed="$3"
 resultsFolder="$4"
+experimentID="$5"
 evoCriterion="branch:weakmutation"
 #
 #Constants
@@ -212,6 +213,11 @@ function jacoco() {
 #propertiesFile		: the used properties file
 #budgetUsed		: the used budget
 #seedUsed		: the used seed
+#evosuiteTime		: the time it took evosuite to generate tests
+#randoopTime		: the time it took randoop to generate tests
+#mujavaTime		: the time it took mujava to run mutation analysis
+#classAnalyzed		: the class under analysis
+#experimentID		: an id identifying this experiment
 function collectResults() {
 	echo "Collecting results..."
 	local resultsFolder="$1"
@@ -220,11 +226,18 @@ function collectResults() {
 	propertiesFileFolder=${propertiesFileFolder%.*}
 	local budgetUsed="$3"
 	local seedUsed="$4"
-	local outputDir="${resultsFolder}/${propertiesFileFolder}-${budgetUsed}_${seedUsed}"
+	local evoTime="$5"
+	local rdpTime="$6"
+	local mjTime="$7"
+	local class="$8"
+	local expID="$9"
+	local outputDir="${resultsFolder}/${propertiesFileFolder}-${budgetUsed}_${seedUsed}/$expID"
 	subsumptionOutput=$(grep -o "mutation.advanced.dynamicSubsumption.output= .*$" $propertiesFile)
 	[ -z "$subsumptionOutput" ] && exit 701
 	subsumptionOutput=$(echo "$subsumptionOutput" | sed 's/mutation\.advanced\.dynamicSubsumption\.output= //g')
 	mkdir -p "$outputDir/subsumptionOutput/"
+	mutationScore=$(grep -o "${class} scored : .*$" "${propertiesFile}.out")
+	[ -z "$mutationScore" ] && mutationScore="ERROR(NO MUTATION SCORE FOUND)"
 	mv "$propertiesFile" "$outputDir"
 	mv "${propertiesFile}.out" "$outputDir"
 	mv "${propertiesFile}.err" "$outputDir"	
@@ -234,6 +247,15 @@ function collectResults() {
 	mv "externalOutput.log" "$outputDir"
 	mv "externalError.log" "$outputDir"
 	mv "$subsumptionOutput/"* "$outputDir/subsumptionOutput/"
+	experimentSummary="$outputDir/experimentSummary.txt"
+	touch "$experimentSummary"
+	echo "Summary for ${propertiesFile##*/}" >> "$experimentSummary"
+	echo "Budget : $budgetUsed" >> "$experimentSummary"
+	echo "Seed   : $seedUsed" >> "$experimentSummary"
+	echo "EvoSuite took $evoTime" >> "$experimentSummary"
+	echo "Randoop took $rdpTime" >> "$experimentSummary"
+	echo "muJava++ took $mjTime" >> "$experimentSummary"
+	echo "$mutationScore" >> "$experimentSummary"
 }
 
 #MAIN
@@ -260,34 +282,58 @@ mutantDir=$(echo "$mutantDir" | sed 's/path\.mutants= //g')
 [ -e "${mutantDir}" ] && [ -n "$(ls -A ${mutantDir})" ] && exit 111
 [ -e "${testDir}" ] && [ -n "$(ls -A ${testDir})" ] && exit 112
 [ ! -e "${testDir}" ] && mkdir -p "$testDir"
+
+#TIMES
+evosuiteTime=""
+randoopTime=""
+mujavaTime=""
+############################################################################################################
 #TEST GENERATION
+START=$(date +%s.%N)
 evosuite "$classname" "${CURRENT_DIR}/$binDir" "${CURRENT_DIR}/$testDir" "$evoCriterion" "$budget" "$seed"
 ecode="$?"
 [[ "$ecode" -ne "0" ]] && exit 201
+END=$(date +%s.%N)
+evosuiteTime=$(echo "$END - $START" | bc)
+
+START=$(date +%s.%N)
 randoop "$classname" "${CURRENT_DIR}/$binDir" "${CURRENT_DIR}/$testDir" "$budget" "$seed"
 ecode="$?"
 [[ "$ecode" -ne "0" ]] && exit 202
+END=$(date +%s.%N)
+randoopTime=$(echo "$END - $START" | bc)
+############################################################################################################
+
 #TEST COMPILATION
 compileEvosuiteTests "$classnameAsPath${ES_JUNIT_SUFFIX}.java" "${CURRENT_DIR}/${testDir}" "${CURRENT_DIR}/${binDir}:${CURRENT_DIR}/${testDir}" ecode
 [[ "$ecode" -ne "0" ]] && exit 301
 compileRandoopTests "${CURRENT_DIR}/${testDir}" "${CURRENT_DIR}/${binDir}:${CURRENT_DIR}/${testDir}" ecode
 [[ "$ecode" -ne "0" ]] && exit 302
+############################################################################################################
 
 tests=""
 getTestsFrom "${CURRENT_DIR}/$testDir" tests
 
+#COVERAGE
 jacoco "${CURRENT_DIR}/$binDir" "${CURRENT_DIR}/$testDir" "${CURRENT_DIR}/$sourceDir" "$tests" "$classname"
+############################################################################################################
 
+#PROPERTIES GENERATION
 propertiesFile=""
 makeCompletePropertiesFile "$propertiesTemplateFile" "$tests" propertiesFile
+############################################################################################################
 
+#MUTATION TESTING
+START=$(date +%s.%N)
 mujava "${CURRENT_DIR}/${binDir}:${CURRENT_DIR}/${testDir}:${JUNIT}:${TESTING_JARS_ES}:${TESTING_JARS_RD}" $propertiesFile
 ecode="$?"
 [[ "$ecode" -ne "0" ]] && exit 601
+END=$(date +%s.%N)
+mujavaTime=$(echo "$END - $START" | bc)
+############################################################################################################
 
-collectResults "$resultsFolder" "$propertiesFile" "$budget" "$seed"
+collectResults "$resultsFolder" "$propertiesFile" "$budget" "$seed" "$evosuiteTime" "$randoopTime" "$mujavaTime" "$classname" "$experimentID"
 rm -rf "evosuite-report"
 rm -rf "error.log"
-
 
 set -x
