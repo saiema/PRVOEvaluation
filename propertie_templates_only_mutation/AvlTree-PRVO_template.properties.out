@@ -1,0 +1,177 @@
+Parsing : jar:file:/media/stein/Data/Projects/PRVOEvaluation/tools/mujava/mujava++.jar!/mujava/app/mutantsInfo.xml
+
+Validating parameters...
+
+
+Operators: [PRVOL_SMART, PRVOR_REFINED, PRVOU_REFINED, AODS, AODU, AOIS, AOIU, AORB, AORS, AORU, ASRS, COD, COI, COR, LOD, LOI, LOR, ROR, SOR]
+Mutants dir: mutants/benchmarks/avltree/
+Original source dir: benchmarks/src/
+Original bin dir: benchmarks/bin/
+
+
+Verifying class to mutate...
+Original source dir: benchmarks/src/
+Class to mutate: avltree.AvlTree
+Separator: /
+Class to mutate as path: avltree/AvlTree
+Class to mutate full path: benchmarks/src/avltree/AvlTree.java
+
+Class to mutate: avltree.AvlTree
+no methods set in configuration, using class methods
+Methods to mutate: [doubleWithLeftChild, doubleWithRightChild, elementAt, find, findMax, findMin, height, insert, insertElem, isEmpty, makeEmpty, max, rotateWithLeftChild, rotateWithRightChild]
+allowed members: [avltree(\.([^#]+))?\#.*]
+Ignoring mutGenLimit annotations
+Quick death disabled
+Dynamic subsumption analysis disabled
+Full verbose mode enabled
+Write mutant prologue enabled
+Primitive to Object assignments are disabled
+Apply PRVOX_REFINED to mutate arguments in statements containing only a method call
+Generations to generate: 1
+Using external JUnit runner
+Using parallel external JUnit runner
+Parallel JUnit runner using 10 threads
+JUnit jar path: tools/junit-4.12.jar
+hamcrest jar path: tools/org.hamcrest.core_1.3.0.v201303031735.jar
+Using sockets to communicate with external runners
+PRVO same length enabled
+PRVO increase length disabled
+PRVO decrease length disabled
+PRVO one by two disabled
+PRVO two by one disabled
+PRVO all by one left disabled
+PRVO all by one right disabled
+PRVO Non Navigation Expression mutations disabled (this overrides other options)
+PRVO literal mutations disabled
+PRVO Object Allocation mutations disabled
+PRVO Array Allocation mutations disabled
+PRVO super use disabled
+PRVO this use disabled
+PRVO replacement with literals disabled
+PRVO null literal use disabled
+PRVO true literal use disabled
+PRVO false literal use disabled
+PRVO empty string literal use disabled
+PRVO zero literal use disabled
+PRVO one literal use disabled
+PRVO string literals use disabled
+PRVO final members use enabled
+PRVO relaxed type check disabled
+PRVO autobox in checking disabled
+PRVO inherited elements use disabled
+PRVO will not use methods or final fields or variables for arithmetic shortcut operators expressions
+PRVO will not use final fields or variables for left hand side of assignments, and will not mutate the left hand side if it's final
+ROR replacement with true enabled
+ROR replacement with false enabled
+ROR smart literal replacement enabled
+COR and op enabled
+COR or op enabled
+COR xor op enabled
+COR bit and op disabled
+COR bit or op disabled
+BEE skip equivalent constant mutations disabled
+BEE skip constants with true or false disabled
+BEE scan for expressions disabled
+AOIS will not mutate final variables or fields
+AODS will ignore arithmetic operator shortcuts when they are a statement
+Parameters validated
+
+
+Generating mutants...
+
+Generation : 1 | mutants 304
+mutations for line : 1
+	mutations for operator PRVOU_REFINED : 2
+	mutations for operator AODU : 2
+	mutations for operator AOIS : 8
+	mutations for operator AOIU : 8
+	mutations for operator AORU : 2
+	mutations for operator COI : 5
+	mutations for operator LOI : 10
+	mutations for operator ROR : 19
+mutations for line : 2
+	mutations for operator COI : 3
+	mutations for operator ROR : 7
+mutations for line : 3
+	mutations for operator PRVOU_REFINED : 3
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 1
+	mutations for operator COI : 1
+	mutations for operator LOI : 3
+	mutations for operator ROR : 7
+mutations for line : 4
+	mutations for operator PRVOR_REFINED : 3
+	mutations for operator PRVOU_REFINED : 2
+	mutations for operator AOIU : 2
+	mutations for operator AORB : 8
+	mutations for operator COI : 1
+	mutations for operator LOI : 4
+	mutations for operator ROR : 1
+mutations for line : 5
+	mutations for operator PRVOR_REFINED : 2
+	mutations for operator PRVOU_REFINED : 6
+	mutations for operator AOIS : 12
+	mutations for operator AOIU : 4
+	mutations for operator AORB : 8
+	mutations for operator COI : 2
+	mutations for operator LOI : 8
+	mutations for operator ROR : 8
+mutations for line : 6
+	mutations for operator PRVOL_SMART : 3
+	mutations for operator PRVOR_REFINED : 6
+	mutations for operator PRVOU_REFINED : 3
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 1
+	mutations for operator COI : 1
+	mutations for operator LOI : 3
+	mutations for operator ROR : 7
+mutations for line : 7
+	mutations for operator PRVOR_REFINED : 3
+	mutations for operator PRVOU_REFINED : 6
+	mutations for operator AORB : 4
+	mutations for operator COI : 1
+	mutations for operator LOI : 2
+	mutations for operator ROR : 7
+mutations for line : 8
+	mutations for operator PRVOU_REFINED : 4
+	mutations for operator AOIS : 4
+	mutations for operator COI : 1
+	mutations for operator LOI : 2
+	mutations for operator ROR : 7
+mutations for line : 15
+	mutations for operator PRVOU_REFINED : 3
+	mutations for operator AOIS : 4
+	mutations for operator COI : 1
+	mutations for operator LOI : 2
+	mutations for operator ROR : 7
+mutations for line : 16
+	mutations for operator PRVOL_SMART : 3
+	mutations for operator PRVOR_REFINED : 3
+	mutations for operator AOIU : 1
+	mutations for operator LOI : 1
+mutations for line : 17
+	mutations for operator PRVOU_REFINED : 6
+	mutations for operator AORB : 4
+	mutations for operator COI : 1
+	mutations for operator LOI : 2
+	mutations for operator ROR : 7
+mutations for line : 18
+	mutations for operator PRVOU_REFINED : 4
+	mutations for operator AOIS : 4
+	mutations for operator COI : 1
+	mutations for operator LOI : 2
+	mutations for operator ROR : 7
+mutations for line : 30
+	mutations for operator PRVOL_SMART : 3
+	mutations for operator PRVOR_REFINED : 6
+	mutations for operator AOIU : 1
+	mutations for operator AORB : 4
+	mutations for operator LOI : 2
+
+Generations : 2 (includes generation 0 with original file)
+
+{mutant-0/=[], mutant-0/avltree/AvlTree/elementAt=[AORU/0/, AODU/1/, AOIU/2/, AOIU/3/, AOIS/4/, AOIS/5/, AOIS/6/, AOIS/7/, ROR/8/, ROR/9/, ROR/10/, COI/11/, LOI/12/, LOI/13/, PRVOU_REFINED/14/, PRVOU_REFINED/15/], mutant-0/avltree/AvlTree/find=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, AOIS/5/, AOIS/6/, AOIS/7/, AOIS/8/, ROR/9/, ROR/10/, ROR/11/, ROR/12/, ROR/13/, ROR/14/, ROR/15/, ROR/16/, ROR/17/, ROR/18/, ROR/19/, ROR/20/, ROR/21/, ROR/22/, ROR/23/, COI/24/, COI/25/, COI/26/, LOI/27/, LOI/28/, LOI/29/, LOI/30/, LOI/31/, PRVOR_REFINED/32/, PRVOR_REFINED/33/, PRVOR_REFINED/34/, PRVOR_REFINED/35/, PRVOR_REFINED/36/, PRVOR_REFINED/37/, PRVOU_REFINED/38/, PRVOU_REFINED/39/, PRVOU_REFINED/40/, PRVOU_REFINED/41/, PRVOU_REFINED/42/, PRVOU_REFINED/43/], mutant-0/avltree/AvlTree/findMax=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, COI/4/, COI/5/, PRVOR_REFINED/6/, PRVOR_REFINED/7/, PRVOR_REFINED/8/, PRVOU_REFINED/9/, PRVOU_REFINED/10/, PRVOU_REFINED/11/], mutant-0/avltree/AvlTree/findMin=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, COI/4/, COI/5/, PRVOR_REFINED/6/, PRVOR_REFINED/7/, PRVOU_REFINED/8/, PRVOU_REFINED/9/], mutant-0/avltree/AvlTree/height=[AORU/0/, AODU/1/, AOIU/2/, AOIU/3/, AOIS/4/, AOIS/5/, AOIS/6/, AOIS/7/, ROR/8/, ROR/9/, ROR/10/, COI/11/, LOI/12/, LOI/13/], mutant-0/avltree/AvlTree/insert=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORB/4/, AORB/5/, AORB/6/, AORB/7/, AORB/8/, AORB/9/, AORB/10/, AORB/11/, AOIU/12/, AOIU/13/, AOIU/14/, AOIU/15/, AOIS/16/, AOIS/17/, AOIS/18/, AOIS/19/, AOIS/20/, AOIS/21/, AOIS/22/, AOIS/23/, AOIS/24/, AOIS/25/, AOIS/26/, AOIS/27/, AOIS/28/, AOIS/29/, AOIS/30/, AOIS/31/, ROR/32/, ROR/33/, ROR/34/, ROR/35/, ROR/36/, ROR/37/, ROR/38/, ROR/39/, ROR/40/, ROR/41/, ROR/42/, ROR/43/, ROR/44/, ROR/45/, ROR/46/, ROR/47/, ROR/48/, ROR/49/, ROR/50/, ROR/51/, ROR/52/, ROR/53/, ROR/54/, ROR/55/, ROR/56/, ROR/57/, ROR/58/, ROR/59/, ROR/60/, ROR/61/, ROR/62/, ROR/63/, ROR/64/, ROR/65/, ROR/66/, ROR/67/, ROR/68/, ROR/69/, ROR/70/, ROR/71/, ROR/72/, ROR/73/, ROR/74/, ROR/75/, ROR/76/, COI/77/, COI/78/, COI/79/, COI/80/, COI/81/, COI/82/, COI/83/, LOI/84/, LOI/85/, LOI/86/, LOI/87/, LOI/88/, LOI/89/, LOI/90/, LOI/91/, LOI/92/, LOI/93/, LOI/94/, LOI/95/, LOI/96/, LOI/97/, LOI/98/, LOI/99/, LOI/100/, PRVOL_SMART/101/, PRVOL_SMART/102/, PRVOL_SMART/103/, PRVOL_SMART/104/, PRVOL_SMART/105/, PRVOL_SMART/106/, PRVOL_SMART/107/, PRVOL_SMART/108/, PRVOL_SMART/109/, PRVOR_REFINED/110/, PRVOR_REFINED/111/, PRVOR_REFINED/112/, PRVOR_REFINED/113/, PRVOR_REFINED/114/, PRVOR_REFINED/115/, PRVOR_REFINED/116/, PRVOR_REFINED/117/, PRVOR_REFINED/118/, PRVOR_REFINED/119/, PRVOR_REFINED/120/, PRVOR_REFINED/121/, PRVOU_REFINED/122/, PRVOU_REFINED/123/, PRVOU_REFINED/124/, PRVOU_REFINED/125/, PRVOU_REFINED/126/, PRVOU_REFINED/127/, PRVOU_REFINED/128/, PRVOU_REFINED/129/, PRVOU_REFINED/130/, PRVOU_REFINED/131/, PRVOU_REFINED/132/, PRVOU_REFINED/133/, PRVOU_REFINED/134/, PRVOU_REFINED/135/, PRVOU_REFINED/136/, PRVOU_REFINED/137/, PRVOU_REFINED/138/, PRVOU_REFINED/139/, PRVOU_REFINED/140/, PRVOU_REFINED/141/, PRVOU_REFINED/142/, PRVOU_REFINED/143/, PRVOU_REFINED/144/, PRVOU_REFINED/145/, PRVOU_REFINED/146/, PRVOU_REFINED/147/], mutant-0/avltree/AvlTree/insertElem=[AOIU/0/, LOI/1/], mutant-0/avltree/AvlTree/isEmpty=[ROR/0/, ROR/1/, ROR/2/, COI/3/], mutant-0/avltree/AvlTree/max=[AOIU/0/, AOIU/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, ROR/7/, ROR/8/, COI/9/, LOI/10/, LOI/11/, LOI/12/, LOI/13/], mutant-0/avltree/AvlTree/rotateWithLeftChild=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORB/4/, AORB/5/, AORB/6/, AORB/7/, AOIU/8/, AOIU/9/, AOIU/10/, AOIS/11/, AOIS/12/, AOIS/13/, AOIS/14/, LOI/15/, LOI/16/, LOI/17/, LOI/18/, LOI/19/], mutant-0/avltree/AvlTree/rotateWithRightChild=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORB/4/, AORB/5/, AORB/6/, AORB/7/, AOIU/8/, AOIU/9/, AOIU/10/, AOIS/11/, AOIS/12/, AOIS/13/, AOIS/14/, LOI/15/, LOI/16/, LOI/17/, LOI/18/, LOI/19/]}
+
+Mutants generated
+
+

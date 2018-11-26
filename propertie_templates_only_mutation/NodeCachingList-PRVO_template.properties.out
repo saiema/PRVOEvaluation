@@ -1,0 +1,186 @@
+Parsing : jar:file:/media/stein/Data/Projects/PRVOEvaluation/tools/mujava/mujava++.jar!/mujava/app/mutantsInfo.xml
+
+Validating parameters...
+
+
+Operators: [PRVOL_SMART, PRVOR_REFINED, PRVOU_REFINED, AODS, AODU, AOIS, AOIU, AORB, AORS, AORU, ASRS, COD, COI, COR, LOD, LOI, LOR, ROR, SOR]
+Mutants dir: mutants/benchmarks/ncll/
+Original source dir: benchmarks/src/
+Original bin dir: benchmarks/bin/
+
+
+Verifying class to mutate...
+Original source dir: benchmarks/src/
+Class to mutate: org.apache.commons.collections4.list.NCLL
+Separator: /
+Class to mutate as path: org/apache/commons/collections4/list/NCLL
+Class to mutate full path: benchmarks/src/org/apache/commons/collections4/list/NCLL.java
+
+Class to mutate: org.apache.commons.collections4.list.NCLL
+no methods set in configuration, using class methods
+Methods to mutate: [add, addFirst, addLast, addNode, addNodeAfter, addNodeBefore, addNodeToCache, clear, contains, createHeaderNode, createNewNode, createNode, equals, get, getFirst, getLast, getMaximumCacheSize, getNode, getNodeFromCache, hashCode, indexOf, init, isCacheFull, isEmpty, isEqualValue, iterator, lastIndexOf, listIterator, remove, removeAllNodes, removeAllNodesFromList, removeFirst, removeLast, removeNode, removeNodeFromList, removeValue, set, setMaximumCacheSize, shrinkCacheToMaximumSize, size, toArray, toString, updateNode]
+allowed members: [org\.apache\.commons\.collections4\.list\.NCLL(\.([^#]+))?\#.*]
+Ignoring mutGenLimit annotations
+Quick death disabled
+Dynamic subsumption analysis disabled
+Full verbose mode enabled
+Write mutant prologue enabled
+Primitive to Object assignments are disabled
+Apply PRVOX_REFINED to mutate arguments in statements containing only a method call
+Generations to generate: 1
+Using external JUnit runner
+Using parallel external JUnit runner
+Parallel JUnit runner using 10 threads
+JUnit jar path: tools/junit-4.12.jar
+hamcrest jar path: tools/org.hamcrest.core_1.3.0.v201303031735.jar
+Using sockets to communicate with external runners
+PRVO same length enabled
+PRVO increase length disabled
+PRVO decrease length disabled
+PRVO one by two disabled
+PRVO two by one disabled
+PRVO all by one left disabled
+PRVO all by one right disabled
+PRVO Non Navigation Expression mutations disabled (this overrides other options)
+PRVO literal mutations disabled
+PRVO Object Allocation mutations disabled
+PRVO Array Allocation mutations disabled
+PRVO super use disabled
+PRVO this use disabled
+PRVO replacement with literals disabled
+PRVO null literal use disabled
+PRVO true literal use disabled
+PRVO false literal use disabled
+PRVO empty string literal use disabled
+PRVO zero literal use disabled
+PRVO one literal use disabled
+PRVO string literals use disabled
+PRVO final members use enabled
+PRVO relaxed type check disabled
+PRVO autobox in checking disabled
+PRVO inherited elements use disabled
+PRVO will not use methods or final fields or variables for arithmetic shortcut operators expressions
+PRVO will not use final fields or variables for left hand side of assignments, and will not mutate the left hand side if it's final
+ROR replacement with true enabled
+ROR replacement with false enabled
+ROR smart literal replacement enabled
+COR and op enabled
+COR or op enabled
+COR xor op enabled
+COR bit and op disabled
+COR bit or op disabled
+BEE skip equivalent constant mutations disabled
+BEE skip constants with true or false disabled
+BEE scan for expressions disabled
+AOIS will not mutate final variables or fields
+AODS will ignore arithmetic operator shortcuts when they are a statement
+Parameters validated
+
+
+Generating mutants...
+
+Generation : 1 | mutants 519
+mutations for line : 1
+	mutations for operator PRVOL_SMART : 3
+	mutations for operator AOIS : 56
+	mutations for operator AOIU : 21
+	mutations for operator AORB : 8
+	mutations for operator AORU : 1
+	mutations for operator COI : 18
+	mutations for operator COR : 3
+	mutations for operator LOI : 43
+	mutations for operator ROR : 68
+mutations for line : 2
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 3
+	mutations for operator COI : 11
+	mutations for operator LOI : 4
+	mutations for operator ROR : 17
+mutations for line : 3
+	mutations for operator AOIS : 8
+	mutations for operator AOIU : 7
+	mutations for operator AORB : 8
+	mutations for operator AORS : 2
+	mutations for operator COI : 1
+	mutations for operator LOI : 14
+	mutations for operator ROR : 8
+mutations for line : 4
+	mutations for operator AOIS : 12
+	mutations for operator AOIU : 5
+	mutations for operator AORB : 4
+	mutations for operator AORS : 2
+	mutations for operator COD : 1
+	mutations for operator COI : 5
+	mutations for operator COR : 3
+	mutations for operator LOI : 9
+	mutations for operator ROR : 10
+mutations for line : 5
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 2
+	mutations for operator AORS : 2
+	mutations for operator COI : 2
+	mutations for operator LOI : 5
+	mutations for operator ROR : 1
+mutations for line : 6
+	mutations for operator AORS : 3
+mutations for line : 7
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 2
+	mutations for operator AORS : 1
+	mutations for operator COI : 1
+	mutations for operator LOI : 4
+	mutations for operator ROR : 7
+mutations for line : 8
+	mutations for operator PRVOU_REFINED : 11
+	mutations for operator AODU : 2
+	mutations for operator AOIS : 12
+	mutations for operator AOIU : 2
+	mutations for operator AORU : 2
+	mutations for operator COI : 3
+	mutations for operator LOI : 4
+	mutations for operator ROR : 14
+mutations for line : 9
+	mutations for operator AORS : 1
+	mutations for operator COI : 1
+mutations for line : 10
+	mutations for operator COI : 1
+	mutations for operator ROR : 3
+mutations for line : 11
+	mutations for operator AOIS : 4
+	mutations for operator AORB : 4
+	mutations for operator LOI : 4
+	mutations for operator ROR : 7
+mutations for line : 12
+	mutations for operator PRVOU_REFINED : 1
+	mutations for operator COI : 1
+mutations for line : 13
+	mutations for operator AOIS : 4
+	mutations for operator AORS : 1
+	mutations for operator COI : 1
+	mutations for operator COR : 3
+	mutations for operator LOI : 3
+	mutations for operator ROR : 5
+mutations for line : 16
+	mutations for operator COD : 1
+	mutations for operator COI : 1
+	mutations for operator LOI : 1
+	mutations for operator ROR : 6
+mutations for line : 17
+	mutations for operator COI : 1
+mutations for line : 18
+	mutations for operator AOIS : 4
+	mutations for operator AORS : 1
+	mutations for operator LOI : 3
+	mutations for operator ROR : 5
+mutations for line : 20
+	mutations for operator COD : 1
+	mutations for operator COI : 1
+	mutations for operator COR : 3
+
+Generations : 2 (includes generation 0 with original file)
+
+{mutant-0/=[], mutant-0/org/apache/commons/collections4/list/NCLL/add=[AOIU/0/, AOIU/1/, AOIU/2/, COI/3/, COI/4/, LOI/5/, LOI/6/, LOI/7/], mutant-0/org/apache/commons/collections4/list/NCLL/addFirst=[AOIU/0/, COI/1/, LOI/2/], mutant-0/org/apache/commons/collections4/list/NCLL/addLast=[AOIU/0/, COI/1/, LOI/2/], mutant-0/org/apache/commons/collections4/list/NCLL/addNode=[AORS/0/, AORS/1/], mutant-0/org/apache/commons/collections4/list/NCLL/addNodeAfter=[AOIU/0/, LOI/1/], mutant-0/org/apache/commons/collections4/list/NCLL/addNodeBefore=[AOIU/0/, LOI/1/], mutant-0/org/apache/commons/collections4/list/NCLL/addNodeToCache=[AORS/0/], mutant-0/org/apache/commons/collections4/list/NCLL/contains=[AORU/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, ROR/7/, COI/8/, LOI/9/, LOI/10/], mutant-0/org/apache/commons/collections4/list/NCLL/createNewNode=[AOIU/0/, LOI/1/], mutant-0/org/apache/commons/collections4/list/NCLL/createNode=[AOIU/0/, AOIU/1/, ROR/2/, ROR/3/, ROR/4/, COI/5/, LOI/6/, LOI/7/], mutant-0/org/apache/commons/collections4/list/NCLL/equals=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, ROR/7/, ROR/8/, ROR/9/, ROR/10/, ROR/11/, ROR/12/, ROR/13/, ROR/14/, ROR/15/, ROR/16/, ROR/17/, ROR/18/, COR/19/, COR/20/, COR/21/, COR/22/, COR/23/, COR/24/, COD/25/, COD/26/, COI/27/, COI/28/, COI/29/, COI/30/, COI/31/, COI/32/, COI/33/, COI/34/, COI/35/, COI/36/, COI/37/, PRVOU_REFINED/38/, PRVOU_REFINED/39/, PRVOU_REFINED/40/, PRVOU_REFINED/41/, PRVOU_REFINED/42/, PRVOU_REFINED/43/, PRVOU_REFINED/44/, PRVOU_REFINED/45/, PRVOU_REFINED/46/, PRVOU_REFINED/47/, PRVOU_REFINED/48/, PRVOU_REFINED/49/], mutant-0/org/apache/commons/collections4/list/NCLL/get=[AOIU/0/, COI/1/, LOI/2/], mutant-0/org/apache/commons/collections4/list/NCLL/getFirst=[ROR/0/, ROR/1/, ROR/2/, COI/3/], mutant-0/org/apache/commons/collections4/list/NCLL/getLast=[ROR/0/, ROR/1/, ROR/2/, COI/3/], mutant-0/org/apache/commons/collections4/list/NCLL/getMaximumCacheSize=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, LOI/5/], mutant-0/org/apache/commons/collections4/list/NCLL/getNode=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORS/4/, AORS/5/, AOIS/6/, AOIS/7/, AOIS/8/, AOIS/9/, AOIS/10/, AOIS/11/, AOIS/12/, AOIS/13/, AOIS/14/, AOIS/15/, AOIS/16/, AOIS/17/, AOIS/18/, AOIS/19/, AOIS/20/, AOIS/21/, AOIS/22/, AOIS/23/, AOIS/24/, AOIS/25/, AOIS/26/, AOIS/27/, AOIS/28/, AOIS/29/, ROR/30/, ROR/31/, ROR/32/, ROR/33/, ROR/34/, ROR/35/, ROR/36/, ROR/37/, ROR/38/, ROR/39/, ROR/40/, ROR/41/, ROR/42/, ROR/43/, ROR/44/, ROR/45/, ROR/46/, ROR/47/, ROR/48/, ROR/49/, ROR/50/, ROR/51/, ROR/52/, ROR/53/, ROR/54/, ROR/55/, ROR/56/, ROR/57/, ROR/58/, ROR/59/, ROR/60/, ROR/61/, ROR/62/, ROR/63/, ROR/64/, ROR/65/, ROR/66/, ROR/67/, COR/68/, COR/69/, COR/70/, COD/71/, COI/72/, COI/73/, COI/74/, LOI/75/, LOI/76/, LOI/77/, LOI/78/, LOI/79/, LOI/80/, LOI/81/, LOI/82/, LOI/83/, LOI/84/, LOI/85/, LOI/86/, LOI/87/, LOI/88/, LOI/89/, LOI/90/, LOI/91/, LOI/92/, LOI/93/, LOI/94/], mutant-0/org/apache/commons/collections4/list/NCLL/getNodeFromCache=[AORS/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, ROR/5/, ROR/6/, ROR/7/, ROR/8/, ROR/9/, ROR/10/, ROR/11/, COI/12/, LOI/13/, LOI/14/], mutant-0/org/apache/commons/collections4/list/NCLL/hashCode=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORB/4/, AORB/5/, AORB/6/, AORB/7/, AOIU/8/, AOIU/9/, AOIU/10/, AOIU/11/, AOIS/12/, AOIS/13/, AOIS/14/, AOIS/15/, AOIS/16/, AOIS/17/, AOIS/18/, AOIS/19/, ROR/20/, ROR/21/, ROR/22/, LOI/23/, LOI/24/, LOI/25/, LOI/26/, LOI/27/, LOI/28/, LOI/29/, LOI/30/], mutant-0/org/apache/commons/collections4/list/NCLL/indexOf=[AORS/0/, AORU/1/, AODU/2/, AOIU/3/, AOIU/4/, AOIU/5/, AOIS/6/, AOIS/7/, AOIS/8/, AOIS/9/, ROR/10/, COI/11/, LOI/12/, LOI/13/, LOI/14/], mutant-0/org/apache/commons/collections4/list/NCLL/isCacheFull=[AOIS/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, AOIS/5/, AOIS/6/, AOIS/7/, ROR/8/, ROR/9/, ROR/10/, ROR/11/, ROR/12/, ROR/13/, ROR/14/, COI/15/, LOI/16/, LOI/17/], mutant-0/org/apache/commons/collections4/list/NCLL/isEmpty=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, COI/7/, LOI/8/], mutant-0/org/apache/commons/collections4/list/NCLL/isEqualValue=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, ROR/7/, ROR/8/, ROR/9/, COR/10/, COR/11/, COR/12/, COI/13/, COI/14/, COI/15/, COI/16/, LOI/17/, LOI/18/, LOI/19/, LOI/20/], mutant-0/org/apache/commons/collections4/list/NCLL/lastIndexOf=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORS/4/, AORU/5/, AODU/6/, AOIU/7/, AOIU/8/, AOIU/9/, AOIU/10/, AOIU/11/, AOIS/12/, AOIS/13/, AOIS/14/, AOIS/15/, AOIS/16/, AOIS/17/, AOIS/18/, AOIS/19/, ROR/20/, COI/21/, LOI/22/, LOI/23/, LOI/24/, LOI/25/, LOI/26/], mutant-0/org/apache/commons/collections4/list/NCLL/listIterator=[LOI/0/], mutant-0/org/apache/commons/collections4/list/NCLL/remove=[AOIU/0/, AOIU/1/, COI/2/, LOI/3/, LOI/4/], mutant-0/org/apache/commons/collections4/list/NCLL/removeAllNodes=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORS/4/, AOIU/5/, AOIU/6/, AOIU/7/, AOIU/8/, AOIS/9/, AOIS/10/, AOIS/11/, AOIS/12/, AOIS/13/, AOIS/14/, AOIS/15/, AOIS/16/, AOIS/17/, AOIS/18/, AOIS/19/, AOIS/20/, AOIS/21/, AOIS/22/, AOIS/23/, AOIS/24/, ROR/25/, ROR/26/, ROR/27/, ROR/28/, ROR/29/, COI/30/, LOI/31/, LOI/32/, LOI/33/, LOI/34/, LOI/35/, LOI/36/, LOI/37/], mutant-0/org/apache/commons/collections4/list/NCLL/removeAllNodesFromList=[AORS/0/, LOI/1/], mutant-0/org/apache/commons/collections4/list/NCLL/removeFirst=[AOIU/0/, ROR/1/, ROR/2/, ROR/3/, COI/4/, LOI/5/], mutant-0/org/apache/commons/collections4/list/NCLL/removeLast=[AOIU/0/, ROR/1/, ROR/2/, ROR/3/, COI/4/, LOI/5/], mutant-0/org/apache/commons/collections4/list/NCLL/removeNodeFromList=[AORS/0/, AORS/1/], mutant-0/org/apache/commons/collections4/list/NCLL/removeValue=[AOIU/0/, ROR/1/, COI/2/, COI/3/, COI/4/, LOI/5/], mutant-0/org/apache/commons/collections4/list/NCLL/set=[AOIU/0/, AOIU/1/, AOIU/2/, COI/3/, LOI/4/, LOI/5/, LOI/6/], mutant-0/org/apache/commons/collections4/list/NCLL/setMaximumCacheSize=[AOIU/0/, LOI/1/, PRVOL_SMART/2/, PRVOL_SMART/3/, PRVOL_SMART/4/], mutant-0/org/apache/commons/collections4/list/NCLL/shrinkCacheToMaximumSize=[AOIS/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, AOIS/5/, AOIS/6/, AOIS/7/, ROR/8/, ROR/9/, ROR/10/, ROR/11/, ROR/12/, COI/13/, LOI/14/, LOI/15/], mutant-0/org/apache/commons/collections4/list/NCLL/size=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, LOI/5/], mutant-0/org/apache/commons/collections4/list/NCLL/toArray=[AORS/0/, AOIU/1/, AOIU/2/, AOIS/3/, AOIS/4/, AOIS/5/, AOIS/6/, AOIS/7/, AOIS/8/, AOIS/9/, AOIS/10/, AOIS/11/, AOIS/12/, AOIS/13/, AOIS/14/, AOIS/15/, AOIS/16/, AOIS/17/, AOIS/18/, AOIS/19/, AOIS/20/, AOIS/21/, AOIS/22/, AOIS/23/, AOIS/24/, AOIS/25/, AOIS/26/, ROR/27/, ROR/28/, ROR/29/, ROR/30/, ROR/31/, ROR/32/, ROR/33/, ROR/34/, ROR/35/, ROR/36/, ROR/37/, ROR/38/, ROR/39/, ROR/40/, ROR/41/, COI/42/, COI/43/, COI/44/, LOI/45/, LOI/46/, LOI/47/, LOI/48/, LOI/49/, LOI/50/, LOI/51/, LOI/52/], mutant-0/org/apache/commons/collections4/list/NCLL/toString=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AOIU/4/, ROR/5/, ROR/6/, ROR/7/, ROR/8/, ROR/9/, ROR/10/, ROR/11/, ROR/12/, ROR/13/, ROR/14/, COI/15/, COI/16/, COI/17/, COI/18/, LOI/19/, LOI/20/, LOI/21/, LOI/22/, LOI/23/], mutant-0/org/apache/commons/collections4/list/NCLL/updateNode=[AOIU/0/, LOI/1/]}
+
+Mutants generated
+
+

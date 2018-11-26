@@ -1,0 +1,125 @@
+Parsing : jar:file:/media/stein/Data/Projects/PRVOEvaluation/tools/mujava/mujava++.jar!/mujava/app/mutantsInfo.xml
+
+Validating parameters...
+
+
+Operators: [PRVOL_SMART, PRVOR_REFINED, PRVOU_REFINED, AODS, AODU, AOIS, AOIU, AORB, AORS, AORU, ASRS, COD, COI, COR, LOD, LOI, LOR, ROR, SOR]
+Mutants dir: mutants/benchmarks/queuebest/
+Original source dir: benchmarks/src/
+Original bin dir: benchmarks/bin/
+
+
+Verifying class to mutate...
+Original source dir: benchmarks/src/
+Class to mutate: motivating.queue.best.BestQueue
+Separator: /
+Class to mutate as path: motivating/queue/best/BestQueue
+Class to mutate full path: benchmarks/src/motivating/queue/best/BestQueue.java
+
+Class to mutate: motivating.queue.best.BestQueue
+no methods set in configuration, using class methods
+Methods to mutate: [aciclycAndCorrectSize, dequeue, enqueue, fromFrontToLast, isEmpty, peek, size, toString]
+allowed members: [motivating\.queue(\.([^#]+))?\#.*]
+Ignoring mutGenLimit annotations
+Quick death disabled
+Dynamic subsumption analysis disabled
+Full verbose mode enabled
+Write mutant prologue enabled
+Primitive to Object assignments are disabled
+Apply PRVOX_REFINED to mutate arguments in statements containing only a method call
+Generations to generate: 1
+Using external JUnit runner
+Using parallel external JUnit runner
+Parallel JUnit runner using 10 threads
+JUnit jar path: tools/junit-4.12.jar
+hamcrest jar path: tools/org.hamcrest.core_1.3.0.v201303031735.jar
+Using sockets to communicate with external runners
+PRVO same length enabled
+PRVO increase length disabled
+PRVO decrease length disabled
+PRVO one by two disabled
+PRVO two by one disabled
+PRVO all by one left disabled
+PRVO all by one right disabled
+PRVO Non Navigation Expression mutations disabled (this overrides other options)
+PRVO literal mutations disabled
+PRVO Object Allocation mutations disabled
+PRVO Array Allocation mutations disabled
+PRVO super use disabled
+PRVO this use disabled
+PRVO replacement with literals disabled
+PRVO null literal use disabled
+PRVO true literal use disabled
+PRVO false literal use disabled
+PRVO empty string literal use disabled
+PRVO zero literal use disabled
+PRVO one literal use disabled
+PRVO string literals use disabled
+PRVO final members use enabled
+PRVO relaxed type check disabled
+PRVO autobox in checking disabled
+PRVO inherited elements use disabled
+PRVO will not use methods or final fields or variables for arithmetic shortcut operators expressions
+PRVO will not use final fields or variables for left hand side of assignments, and will not mutate the left hand side if it's final
+ROR replacement with true enabled
+ROR replacement with false enabled
+ROR smart literal replacement enabled
+COR and op enabled
+COR or op enabled
+COR xor op enabled
+COR bit and op disabled
+COR bit or op disabled
+BEE skip equivalent constant mutations disabled
+BEE skip constants with true or false disabled
+BEE scan for expressions disabled
+AOIS will not mutate final variables or fields
+AODS will ignore arithmetic operator shortcuts when they are a statement
+Parameters validated
+
+
+Generating mutants...
+
+Generation : 1 | mutants 78
+mutations for line : 1
+	mutations for operator AOIS : 8
+	mutations for operator AOIU : 2
+	mutations for operator COI : 1
+	mutations for operator LOI : 3
+	mutations for operator ROR : 7
+mutations for line : 2
+	mutations for operator PRVOU_REFINED : 2
+	mutations for operator COI : 3
+	mutations for operator LOI : 1
+	mutations for operator ROR : 5
+mutations for line : 3
+	mutations for operator COI : 1
+	mutations for operator ROR : 1
+mutations for line : 4
+	mutations for operator PRVOR_REFINED : 3
+	mutations for operator PRVOU_REFINED : 1
+	mutations for operator AOIS : 8
+	mutations for operator AOIU : 2
+	mutations for operator COI : 2
+	mutations for operator LOI : 2
+	mutations for operator ROR : 3
+mutations for line : 5
+	mutations for operator PRVOU_REFINED : 2
+	mutations for operator COI : 2
+	mutations for operator ROR : 6
+mutations for line : 6
+	mutations for operator PRVOL_SMART : 2
+mutations for line : 8
+	mutations for operator AORS : 1
+	mutations for operator COI : 1
+	mutations for operator ROR : 7
+mutations for line : 9
+	mutations for operator AORS : 1
+	mutations for operator LOI : 1
+
+Generations : 2 (includes generation 0 with original file)
+
+{mutant-0/motivating/queue/best/BestQueue/aciclycAndCorrectSize=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, ROR/7/, COI/8/, COI/9/, COI/10/], mutant-0/motivating/queue/best/BestQueue/dequeue=[AORS/0/, ROR/1/, ROR/2/, ROR/3/, COI/4/, PRVOR_REFINED/5/], mutant-0/motivating/queue/best/BestQueue/enqueue=[AORS/0/, AOIU/1/, AOIS/2/, AOIS/3/, AOIS/4/, AOIS/5/, ROR/6/, ROR/7/, ROR/8/, COI/9/, LOI/10/, PRVOL_SMART/11/, PRVOL_SMART/12/], mutant-0/motivating/queue/best/BestQueue/fromFrontToLast=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, COI/4/, COI/5/, PRVOU_REFINED/6/, PRVOU_REFINED/7/], mutant-0/motivating/queue/best/BestQueue/isEmpty=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, COI/7/, LOI/8/], mutant-0/motivating/queue/best/BestQueue/peek=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, LOI/5/, PRVOU_REFINED/6/], mutant-0/motivating/queue/best/BestQueue/size=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, LOI/5/], mutant-0/motivating/queue/best/BestQueue/toString=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, ROR/5/, ROR/6/, ROR/7/, ROR/8/, COI/9/, COI/10/, LOI/11/, LOI/12/, LOI/13/, PRVOR_REFINED/14/, PRVOR_REFINED/15/, PRVOU_REFINED/16/, PRVOU_REFINED/17/]}
+
+Mutants generated
+
+

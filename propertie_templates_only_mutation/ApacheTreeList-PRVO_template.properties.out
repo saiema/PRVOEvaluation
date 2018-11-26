@@ -1,0 +1,232 @@
+Parsing : jar:file:/media/stein/Data/Projects/PRVOEvaluation/tools/mujava/mujava++.jar!/mujava/app/mutantsInfo.xml
+
+Validating parameters...
+
+
+Operators: [PRVOL_SMART, PRVOR_REFINED, PRVOU_REFINED, AODS, AODU, AOIS, AOIU, AORB, AORS, AORU, ASRS, COD, COI, COR, LOD, LOI, LOR, ROR, SOR]
+Mutants dir: mutants/benchmarks/apachetreelist/
+Original source dir: benchmarks/src/
+Original bin dir: benchmarks/bin/
+
+
+Verifying class to mutate...
+Original source dir: benchmarks/src/
+Class to mutate: org.apache.commons.collections4.treelist.TreeList
+Separator: /
+Class to mutate as path: org/apache/commons/collections4/treelist/TreeList
+Class to mutate full path: benchmarks/src/org/apache/commons/collections4/treelist/TreeList.java
+
+Class to mutate: org.apache.commons.collections4.treelist.TreeList
+no methods set in configuration, using class methods
+Methods to mutate: [add, addAll, checkInterval, clear, contains, get, indexOf, iterator, listIterator, remove, set, size, toArray]
+allowed members: [org\.apache\.commons\.collections4\.treelist(\.([^#]+))?\#.*]
+Ignoring mutGenLimit annotations
+Quick death disabled
+Dynamic subsumption analysis disabled
+Full verbose mode enabled
+Write mutant prologue enabled
+Primitive to Object assignments are disabled
+Apply PRVOX_REFINED to mutate arguments in statements containing only a method call
+Generations to generate: 1
+Using external JUnit runner
+Using parallel external JUnit runner
+Parallel JUnit runner using 10 threads
+JUnit jar path: tools/junit-4.12.jar
+hamcrest jar path: tools/org.hamcrest.core_1.3.0.v201303031735.jar
+Using sockets to communicate with external runners
+PRVO same length enabled
+PRVO increase length disabled
+PRVO decrease length disabled
+PRVO one by two disabled
+PRVO two by one disabled
+PRVO all by one left disabled
+PRVO all by one right disabled
+PRVO Non Navigation Expression mutations disabled (this overrides other options)
+PRVO literal mutations disabled
+PRVO Object Allocation mutations disabled
+PRVO Array Allocation mutations disabled
+PRVO super use disabled
+PRVO this use disabled
+PRVO replacement with literals disabled
+PRVO null literal use disabled
+PRVO true literal use disabled
+PRVO false literal use disabled
+PRVO empty string literal use disabled
+PRVO zero literal use disabled
+PRVO one literal use disabled
+PRVO string literals use disabled
+PRVO final members use enabled
+PRVO relaxed type check disabled
+PRVO autobox in checking disabled
+PRVO inherited elements use disabled
+PRVO will not use methods or final fields or variables for arithmetic shortcut operators expressions
+PRVO will not use final fields or variables for left hand side of assignments, and will not mutate the left hand side if it's final
+ROR replacement with true enabled
+ROR replacement with false enabled
+ROR smart literal replacement enabled
+COR and op enabled
+COR or op enabled
+COR xor op enabled
+COR bit and op disabled
+COR bit or op disabled
+BEE skip equivalent constant mutations disabled
+BEE skip constants with true or false disabled
+BEE scan for expressions disabled
+AOIS will not mutate final variables or fields
+AODS will ignore arithmetic operator shortcuts when they are a statement
+Parameters validated
+
+
+Generating mutants...
+
+Generation : 1 | mutants 458
+mutations for line : 1
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 6
+	mutations for operator AORB : 8
+	mutations for operator AORS : 3
+	mutations for operator COI : 5
+	mutations for operator COR : 3
+	mutations for operator LOI : 18
+	mutations for operator ROR : 24
+mutations for line : 2
+	mutations for operator PRVOU_REFINED : 29
+	mutations for operator AODU : 1
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 7
+	mutations for operator AORB : 4
+	mutations for operator AORU : 1
+	mutations for operator COI : 2
+	mutations for operator LOI : 10
+	mutations for operator ROR : 3
+mutations for line : 3
+	mutations for operator PRVOR_REFINED : 2
+	mutations for operator PRVOU_REFINED : 2
+	mutations for operator AOIS : 12
+	mutations for operator AOIU : 2
+	mutations for operator COI : 2
+	mutations for operator LOI : 5
+	mutations for operator ROR : 10
+mutations for line : 4
+	mutations for operator PRVOR_REFINED : 14
+	mutations for operator PRVOU_REFINED : 3
+	mutations for operator AODU : 1
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 4
+	mutations for operator AORU : 1
+	mutations for operator ASRS : 4
+	mutations for operator LOI : 4
+mutations for line : 5
+	mutations for operator AORS : 2
+mutations for line : 6
+	mutations for operator PRVOR_REFINED : 28
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 2
+	mutations for operator AORS : 1
+	mutations for operator LOI : 2
+	mutations for operator ROR : 3
+mutations for line : 7
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 3
+	mutations for operator AORB : 4
+	mutations for operator ASRS : 4
+	mutations for operator LOI : 3
+mutations for line : 8
+	mutations for operator AORS : 1
+	mutations for operator COI : 1
+	mutations for operator LOI : 1
+mutations for line : 9
+	mutations for operator AOIS : 4
+	mutations for operator COI : 3
+	mutations for operator COR : 3
+	mutations for operator LOI : 1
+	mutations for operator ROR : 10
+mutations for line : 10
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 1
+	mutations for operator LOI : 1
+mutations for line : 13
+	mutations for operator COI : 1
+	mutations for operator ROR : 3
+mutations for line : 14
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 1
+	mutations for operator ASRS : 4
+	mutations for operator LOI : 1
+mutations for line : 19
+	mutations for operator COI : 1
+	mutations for operator ROR : 3
+mutations for line : 21
+	mutations for operator AOIU : 2
+	mutations for operator AORB : 4
+	mutations for operator ASRS : 4
+	mutations for operator LOI : 3
+mutations for line : 23
+	mutations for operator COI : 1
+	mutations for operator ROR : 3
+mutations for line : 25
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 4
+	mutations for operator AORB : 8
+	mutations for operator LOI : 5
+mutations for line : 27
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 4
+	mutations for operator AORB : 8
+	mutations for operator LOI : 5
+mutations for line : 28
+	mutations for operator AOIU : 1
+	mutations for operator ASRS : 4
+	mutations for operator LOI : 1
+mutations for line : 30
+	mutations for operator COD : 1
+	mutations for operator COI : 1
+mutations for line : 40
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 1
+	mutations for operator LOI : 1
+mutations for line : 41
+	mutations for operator LOI : 1
+mutations for line : 42
+	mutations for operator AOIS : 4
+	mutations for operator COR : 3
+	mutations for operator LOI : 1
+	mutations for operator ROR : 10
+mutations for line : 43
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 1
+	mutations for operator LOI : 1
+mutations for line : 46
+	mutations for operator ROR : 3
+mutations for line : 47
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 1
+	mutations for operator ASRS : 4
+	mutations for operator LOI : 1
+mutations for line : 52
+	mutations for operator ROR : 3
+mutations for line : 54
+	mutations for operator AORS : 1
+mutations for line : 56
+	mutations for operator ROR : 3
+mutations for line : 58
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 3
+	mutations for operator AORB : 4
+	mutations for operator LOI : 3
+mutations for line : 60
+	mutations for operator AOIS : 4
+	mutations for operator AOIU : 3
+	mutations for operator AORB : 4
+	mutations for operator LOI : 3
+mutations for line : 62
+	mutations for operator COD : 1
+	mutations for operator COI : 1
+
+Generations : 2 (includes generation 0 with original file)
+
+{mutant-0/org/apache/commons/collections4/treelist/TreeList/add=[AORS/0/, AORS/1/, AORS/2/, AORS/3/, AORU/4/, AODU/5/, AOIU/6/, AOIU/7/, AOIU/8/, AOIU/9/, AOIU/10/, AOIS/11/, AOIS/12/, AOIS/13/, AOIS/14/, ROR/15/, ROR/16/, ROR/17/, COI/18/, LOI/19/, LOI/20/, LOI/21/, LOI/22/, LOI/23/, LOI/24/, PRVOR_REFINED/25/, PRVOR_REFINED/26/, PRVOR_REFINED/27/, PRVOR_REFINED/28/, PRVOR_REFINED/29/, PRVOR_REFINED/30/, PRVOR_REFINED/31/, PRVOR_REFINED/32/, PRVOR_REFINED/33/, PRVOR_REFINED/34/, PRVOR_REFINED/35/, PRVOR_REFINED/36/, PRVOR_REFINED/37/, PRVOR_REFINED/38/], mutant-0/org/apache/commons/collections4/treelist/TreeList/addAll=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORB/4/, AORB/5/, AORB/6/, AORB/7/, AORB/8/, AORB/9/, AORB/10/, AORB/11/, AORB/12/, AORB/13/, AORB/14/, AORB/15/, AORB/16/, AORB/17/, AORB/18/, AORB/19/, AORB/20/, AORB/21/, AORB/22/, AORB/23/, AORB/24/, AORB/25/, AORB/26/, AORB/27/, AORB/28/, AORB/29/, AORB/30/, AORB/31/, AORS/32/, AOIU/33/, AOIU/34/, AOIU/35/, AOIU/36/, AOIU/37/, AOIU/38/, AOIU/39/, AOIU/40/, AOIU/41/, AOIU/42/, AOIU/43/, AOIU/44/, AOIU/45/, AOIU/46/, AOIU/47/, AOIU/48/, AOIU/49/, AOIU/50/, AOIU/51/, AOIU/52/, AOIU/53/, AOIU/54/, AOIU/55/, AOIU/56/, AOIU/57/, AOIU/58/, AOIS/59/, AOIS/60/, AOIS/61/, AOIS/62/, AOIS/63/, AOIS/64/, AOIS/65/, AOIS/66/, AOIS/67/, AOIS/68/, AOIS/69/, AOIS/70/, AOIS/71/, AOIS/72/, AOIS/73/, AOIS/74/, AOIS/75/, AOIS/76/, AOIS/77/, AOIS/78/, AOIS/79/, AOIS/80/, AOIS/81/, AOIS/82/, AOIS/83/, AOIS/84/, AOIS/85/, AOIS/86/, AOIS/87/, AOIS/88/, AOIS/89/, AOIS/90/, AOIS/91/, AOIS/92/, AOIS/93/, AOIS/94/, AOIS/95/, AOIS/96/, AOIS/97/, AOIS/98/, AOIS/99/, AOIS/100/, AOIS/101/, AOIS/102/, AOIS/103/, AOIS/104/, AOIS/105/, AOIS/106/, AOIS/107/, AOIS/108/, AOIS/109/, AOIS/110/, AOIS/111/, AOIS/112/, AOIS/113/, AOIS/114/, AOIS/115/, AOIS/116/, AOIS/117/, AOIS/118/, ROR/119/, ROR/120/, ROR/121/, ROR/122/, ROR/123/, ROR/124/, ROR/125/, ROR/126/, ROR/127/, ROR/128/, ROR/129/, ROR/130/, ROR/131/, ROR/132/, ROR/133/, ROR/134/, ROR/135/, ROR/136/, ROR/137/, ROR/138/, ROR/139/, ROR/140/, ROR/141/, ROR/142/, ROR/143/, ROR/144/, ROR/145/, ROR/146/, ROR/147/, ROR/148/, ROR/149/, ROR/150/, ROR/151/, ROR/152/, ROR/153/, ROR/154/, ROR/155/, ROR/156/, ROR/157/, ROR/158/, ROR/159/, ROR/160/, ROR/161/, ROR/162/, ROR/163/, ROR/164/, ROR/165/, ROR/166/, COR/167/, COR/168/, COR/169/, COR/170/, COR/171/, COR/172/, COD/173/, COD/174/, COI/175/, COI/176/, COI/177/, COI/178/, COI/179/, COI/180/, COI/181/, COI/182/, COI/183/, COI/184/, COI/185/, LOI/186/, LOI/187/, LOI/188/, LOI/189/, LOI/190/, LOI/191/, LOI/192/, LOI/193/, LOI/194/, LOI/195/, LOI/196/, LOI/197/, LOI/198/, LOI/199/, LOI/200/, LOI/201/, LOI/202/, LOI/203/, LOI/204/, LOI/205/, LOI/206/, LOI/207/, LOI/208/, LOI/209/, LOI/210/, LOI/211/, LOI/212/, LOI/213/, LOI/214/, LOI/215/, LOI/216/, LOI/217/, LOI/218/, LOI/219/, LOI/220/, ASRS/221/, ASRS/222/, ASRS/223/, ASRS/224/, ASRS/225/, ASRS/226/, ASRS/227/, ASRS/228/, ASRS/229/, ASRS/230/, ASRS/231/, ASRS/232/, ASRS/233/, ASRS/234/, ASRS/235/, ASRS/236/, ASRS/237/, ASRS/238/, ASRS/239/, ASRS/240/, ASRS/241/, ASRS/242/, ASRS/243/, ASRS/244/, PRVOR_REFINED/245/, PRVOR_REFINED/246/, PRVOR_REFINED/247/, PRVOR_REFINED/248/, PRVOR_REFINED/249/, PRVOR_REFINED/250/, PRVOR_REFINED/251/, PRVOR_REFINED/252/, PRVOR_REFINED/253/, PRVOR_REFINED/254/, PRVOR_REFINED/255/, PRVOR_REFINED/256/, PRVOR_REFINED/257/, PRVOR_REFINED/258/], mutant-0/org/apache/commons/collections4/treelist/TreeList/checkInterval=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, ROR/7/, ROR/8/, ROR/9/, ROR/10/, ROR/11/, ROR/12/, ROR/13/, COR/14/, COR/15/, COR/16/, COI/17/, COI/18/, COI/19/, LOI/20/, LOI/21/, LOI/22/, LOI/23/, LOI/24/], mutant-0/org/apache/commons/collections4/treelist/TreeList/clear=[AORS/0/, LOI/1/], mutant-0/org/apache/commons/collections4/treelist/TreeList/contains=[ROR/0/, ROR/1/, ROR/2/, ROR/3/, ROR/4/, ROR/5/, ROR/6/, COI/7/, LOI/8/], mutant-0/org/apache/commons/collections4/treelist/TreeList/get=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AOIU/4/, AOIU/5/, LOI/6/, LOI/7/, LOI/8/, LOI/9/, PRVOU_REFINED/10/, PRVOU_REFINED/11/, PRVOU_REFINED/12/, PRVOU_REFINED/13/, PRVOU_REFINED/14/, PRVOU_REFINED/15/, PRVOU_REFINED/16/, PRVOU_REFINED/17/, PRVOU_REFINED/18/, PRVOU_REFINED/19/, PRVOU_REFINED/20/, PRVOU_REFINED/21/, PRVOU_REFINED/22/, PRVOU_REFINED/23/, PRVOU_REFINED/24/], mutant-0/org/apache/commons/collections4/treelist/TreeList/indexOf=[AORU/0/, AODU/1/, AOIU/2/, AOIU/3/, AOIS/4/, AOIS/5/, AOIS/6/, AOIS/7/, ROR/8/, ROR/9/, ROR/10/, COI/11/, LOI/12/, PRVOU_REFINED/13/, PRVOU_REFINED/14/, PRVOU_REFINED/15/], mutant-0/org/apache/commons/collections4/treelist/TreeList/iterator=[LOI/0/], mutant-0/org/apache/commons/collections4/treelist/TreeList/listIterator=[AOIU/0/, AOIU/1/, LOI/2/, LOI/3/, LOI/4/, LOI/5/], mutant-0/org/apache/commons/collections4/treelist/TreeList/remove=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AORS/4/, AORS/5/, AOIU/6/, AOIU/7/, AOIU/8/, AOIU/9/, LOI/10/, LOI/11/, LOI/12/, LOI/13/, LOI/14/, LOI/15/, PRVOR_REFINED/16/, PRVOR_REFINED/17/, PRVOR_REFINED/18/, PRVOR_REFINED/19/, PRVOR_REFINED/20/, PRVOR_REFINED/21/, PRVOR_REFINED/22/, PRVOR_REFINED/23/, PRVOR_REFINED/24/, PRVOR_REFINED/25/, PRVOR_REFINED/26/, PRVOR_REFINED/27/, PRVOR_REFINED/28/, PRVOR_REFINED/29/], mutant-0/org/apache/commons/collections4/treelist/TreeList/set=[AORB/0/, AORB/1/, AORB/2/, AORB/3/, AOIU/4/, AOIU/5/, AOIU/6/, LOI/7/, LOI/8/, LOI/9/, LOI/10/, LOI/11/, PRVOU_REFINED/12/, PRVOU_REFINED/13/, PRVOU_REFINED/14/, PRVOU_REFINED/15/, PRVOU_REFINED/16/, PRVOU_REFINED/17/, PRVOU_REFINED/18/, PRVOU_REFINED/19/, PRVOU_REFINED/20/, PRVOU_REFINED/21/, PRVOU_REFINED/22/, PRVOU_REFINED/23/, PRVOU_REFINED/24/, PRVOU_REFINED/25/, PRVOU_REFINED/26/, PRVOU_REFINED/27/], mutant-0/org/apache/commons/collections4/treelist/TreeList/size=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, LOI/5/], mutant-0/org/apache/commons/collections4/treelist/TreeList/toArray=[AOIU/0/, AOIS/1/, AOIS/2/, AOIS/3/, AOIS/4/, ROR/5/, ROR/6/, ROR/7/, COI/8/, LOI/9/, PRVOR_REFINED/10/, PRVOR_REFINED/11/]}
+
+Mutants generated
+
+
